@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Snowboard Club</title>
+        <link rel="icon" href="https://46e2982ade2c1c3fee14.cdn6.editmysite.com/uploads/b/46e2982ade2c1c3fee140293f72ffaeb8ee5184df275968c5827ed50d8096488/taobao3_1697175304.png?width=2400&optimize=medium">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body class="center">
+    
+        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4]
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header_container" id="home">
+            <div class="header-item">
+                <h1>Snowboarder Club</h1>
+                <img id="header-img" src="./img/headeremoji.png" width="50"/>
+            </div>
+            <div class="header-item">
+                <button class="header-button">RSVP</button>
+                <button class="header-button">Attendence List</button>
+            </div>
+        </div>
+
+        <!-- about
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="about">
+            <h2>About the Event</h2>
+
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        The event is for snowboarder to gather on the slope of Northstar resort to practice carving.
+                        Whether you are a beginner, intermediater, or high-end player, you are all welcome to join and make friends.
+                        <br><br>Snowboarding began in 1965 when Sherman Poppen created the “Snurfer,” a simple board made by binding two skis together for his daughter. In the 1970s, innovators like Jake Burton Carpenter and Tom Sims refined the design by adding bindings and improving board shapes, helping turn it from a toy into a sport. During the 1980s, snowboarding grew in popularity with organized competitions and the rise of freestyle riding, although many ski resorts initially banned it. By the 1990s, it had become mainstream, with widespread acceptance at resorts and a growing professional scene. Snowboarding reached global recognition when it debuted at the 1998 Winter Olympics in Nagano, and today it is a major winter sport known for its creativity, diverse disciplines, and strong influence from skateboarding and surfing culture.
+                    </p>
+                </div>
+
+                <!-- <div class="about-media">
+                    <img src="./img/snowboarding.png" alt="Snowboard carving" width="500" height="350"/>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="schedule">
+            <h2>Event Schedule</h2>
+
+            <div class="schedule-container">
+                <div class="schedule-card">
+                    <h3>6:00AM ~ 6:30AM</h3>
+                    <p>Starting your day with a good breakfast is essential before snowboarding because it directly affects your energy, performance, and safety on the mountain.<br>Snowboarding is physically demanding—it requires constant balance, leg strength, and core engagement. After a night of fasting, your body needs fuel. Breakfast replenishes your energy so you don’t feel weak or tired halfway through your runs.
+                    <br>On the slopes, quick decisions matter (avoiding obstacles, adjusting to terrain, reacting to others). Eating breakfast helps maintain mental clarity and faster reaction time, reducing the risk of accidents.</p>
+                    <img alt="breakfast pic." src="./img/breakfast.jpg" width="100" height="100"/>
+                </div>
+
+                <div class="schedule-card">
+                    <h3>8:30AM ~ 8:45AM</h3>
+                    <p>Record the beautiful day with your friends by taking groupfies with them.</p>
+                    <img alt="group pic" src="./img/grouphy.jpg" width="300" height="200"/>
+                </div>
+
+                <div class="schedule-card">
+                    <h3>9:00AM ~ 15:00PM</h3>
+                    <p>Ride as much you can and remember to be nice to each other.</p>
+                    <img alt="carving" src="./img/carving.jpg"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div id="links">
+            <h2>Sponsors</h2>
+
+            <a href="https://www.powderbowl.com/shop/2026-mens-snowboard/LCR4PY6MVE75RLPSVP2CEJOV" target="_blank">
+                Gears & Swags
+            </a>
+
+            <br><br>
+
+            <h2>Club's Highlight</h2>
+
+            <div class="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/tXwWc3OxQ3Q"
+                    title="Snowboarding video"
+                    allowfullscreen>
+                </iframe>
+
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/BXCqIISD_6Y"
+                    title="Snowboarding video"
+                    allowfullscreen>
+                </iframe>
+
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/p22I6qvZUF8"
+                    title="Snowboarding video"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class="footer">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
+    </body>
+</html>
