@@ -3,24 +3,16 @@
   Purpose:
   - Fix VSCodeEDU issue that causes a white border to show around
     the preview window
-
-  When To Modify:
-  - If you change the background color of your webpage, you may need to update this rule too.
 ***/
 html {
     background-color: var(--bg-color);
 }
 
 /*** body ***
-  
   Purpose:
   - Add style rules for the body of your webpage
   - This is useful if you want a rule to apply to EVERYTHING on your page
     - (Tip: You can always override these rules later in the stylesheet)
-
-  When To Modify:
-  - [ ] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
 ***/
 body {
     background-color: var(--bg-color);
@@ -40,10 +32,6 @@ body {
   Purpose: 
   - Add style rules for headings (h1-6),
     paragraphs (p), links (a), and buttons
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
 ***/
 h1, h2, h3, h5, h6 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -52,9 +40,6 @@ h1, h2, h3, h5, h6 {
     color: #222;
     margin-top: 1em;
     margin-bottom: 1em;
-    /* border:#a60ce2;
-    border-radius: 6px;
-    background-color: rgb(219, 203, 174); */
 }
 
 h4 {
@@ -92,53 +77,15 @@ a:active {
     opacity: 0.8;
 }
 
-/* button {
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.2em 0.8em;
-  border: none;
-  border-radius: 6px;
-  background-color: #a575b2;
-  color: #530365;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  background-color: #7c428c;
-  color:#fff;
-} */
-
-/* button:active {
-  transform: scale(0.97);
-}
-
-button:focus {
-  outline: 2px solid #93c5fd;
-  outline-offset: 2px;
-} */
-
-/* button:disabled {
-  background-color: #9ca3af;
-  cursor: not-allowed;
-  opacity: 0.7;
-} */
 
 /*** header ***
-  
   Purpose:
   - Add style rules for your website's header section
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
 ***/
 .header-container {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding-top: 0;
     padding-bottom: 1rem;
@@ -236,10 +183,11 @@ button:focus {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .schedule-card img {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -267,13 +215,8 @@ button:focus {
 }
 
 /*** footer ***
-  
   Purpose:
   - Add style rules for your website's footer section
-
-  When To Modify:
-  - [ ] Project 3 (STRETCH FEATURE) 
-  - [ ] Any time after
 ***/
 .footer {
     position: fixed;
@@ -289,7 +232,7 @@ button:focus {
     border-top: 1px solid #333;
 }
 
-/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] */
+/*** Navbar */
 .navbar ul {
     z-index: 1000;
     list-style: none;
@@ -320,13 +263,274 @@ button:focus {
 .navbar ul li a:hover {
     color: white;
 }
+
 #privacy, #contact {
   max-width: 800px;
   margin: auto;
   line-height: 1.7;
 }
+
 /*** Custom Colors (OPTIONAL) */
 :root {
     --bg-color: #a6a0cf;
     --text-color: #231942;
+}
+
+/* Default dark mode style */
+.dark-mode {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
+.dark-mode body {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
+/* Headings */
+.dark-mode h1 {
+  color: #ffffff;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #d2cff5;
+}
+
+/* Paragraphs */
+.dark-mode p {
+  color: #cfcfcf;
+}
+
+/* Links */
+.dark-mode a {
+  color: #a78bfa;
+}
+
+.dark-mode a:visited {
+  color: #8b5cf6;
+}
+
+.dark-mode a:hover {
+  color: #c4b5fd;
+}
+
+/* Navbar */
+.dark-mode .navbar ul {
+  background-color: #1f1b3a;
+}
+
+/* Header */
+.dark-mode .header-container {
+  color: #ffffff;
+}
+
+/* Buttons */
+.dark-mode .header-button {
+  background-color: #4e3056;
+  color: #ffffff;
+}
+
+.dark-mode .header-button:hover {
+  background-color: #cfa7f6;
+}
+
+.nav-button {
+  background-color: #4e3056;
+  color: #cfa7f6;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.2em 0.8em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #77608d;
+  color: #ffffff;
+}
+
+.dark-mode .nav-button {
+  background-color: #77608d;
+  color: black;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.2em 0.8em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark-mode .nav-button:hover {
+  background-color: #cfa7f6;
+}
+
+/* About / Schedule / Privacy / Contact cards */
+.dark-mode .schedule-card,
+.dark-mode #privacy,
+.dark-mode #contact {
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+}
+
+/* Footer */
+.dark-mode .footer {
+  background-color: #1f1b3a;
+  color: #cccccc;
+}
+
+/* Videos */
+.dark-mode iframe {
+  opacity: 0.95;
+}
+
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+***/
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+  /* Set border-color and background */
+}
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.rsvp-para {
+  width: 20%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.rsvp-button {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.2em 0.8em;
+    border: none;
+    border-radius: 6px;
+    background-color: #a575b2;
+    color: #530365;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.rsvp-button:hover {
+    background-color: #7c428c;
+    color: #fff;
+}
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: row; 
+  align-items:center;
+  justify-content:center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: rgb(187, 214, 250);
+    color: black;
+    text-align:justify;
+    font-size: 1rem;
+    font-family: monospace;
+    justify-content: space-around;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+.modal-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #357abd;
+}
+
+/* Dark mode modal styling */
+.dark-mode .modal-container {
+  background-color: #1e1e1e;  /* dark background */
+  color: #ffffff;             /* bright text */
+}
+
+/* Make text extra readable */
+.dark-mode #modal-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Optional: button contrast */
+.dark-mode .modal-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.dark-mode .modal-btn:hover {
+  background-color: #357abd;
+}
+.modal-item {
+    /* Optional: Style individual elements within the modal */
 }
